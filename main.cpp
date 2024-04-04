@@ -6,7 +6,8 @@
 int main() {
 
     //creating output directory
-    std::string outputFolder = "/Users/allen/Downloads/Code/Image-Processing-Driving-Data/resizedLeftImg8bit_trainvaltest/train/aachen"; 
+    //std::string outputFolder = "/Users/allen/Downloads/Code/Image-Processing-Driving-Data/resizedLeftImg8bit_trainvaltest/train/aachen"; 
+    std::string outputFolder = "/Users/allen/Downloads/Code/Image-Processing-Driving-Data/BottomHalfImg8bitVideo/stuttgart_00"; 
     if(!std::__fs::filesystem::exists(outputFolder))
     {
         if(!std::__fs::filesystem::create_directories(outputFolder))
@@ -21,7 +22,8 @@ int main() {
     }
 
     //load the training data
-    std::string left_training_image_aachen = "/Users/allen/Downloads/Code/Image-Processing-Driving-Data/leftImg8bit_trainvaltest/leftImg8bit/train/aachen";
+    //std::string left_training_image_aachen = "/Users/allen/Downloads/Code/Image-Processing-Driving-Data/leftImg8bit_trainvaltest/leftImg8bit/train/aachen";
+    std::string left_training_image_aachen = "/Users/allen/Downloads/Code/Image-Processing-Driving-Data/leftImg8bit_demoVideo/leftImg8bit/demoVideo/stuttgart_00";
 
     for (const auto& entry : std::__fs::filesystem::directory_iterator(left_training_image_aachen))
     {
@@ -55,6 +57,8 @@ int main() {
             cv::imwrite(outputPath, croppedImage);
             std::cout << "Resized image saved to: " << outputPath << std::endl;
             std::cout << "width: " << image.cols << "height: " << image.rows << "\n";
+
+            
         }
 
     }
