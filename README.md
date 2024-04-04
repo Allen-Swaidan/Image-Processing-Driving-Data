@@ -1,1 +1,1 @@
-Cropped the CityScapes leftImg8Bit images to the bottom half only so that it can focus on the road only and reduce other variables that would be considered as noise.
+Performing image processing techniques on a dataset of video frames from a vehicle driving in a city. The pre-processed images will then be given to a neural network for different types of detection and classification such as vehicle classification and segmentation, lane line detection, and pedestrian identification
