@@ -1,31 +1,34 @@
-#include <opencv2/opencv.hpp>
-#include <opencv2/imgproc.hpp>
-#include <filesystem>
-#include <iostream>
+//#include <opencv2/opencv.hpp>
+//#include <opencv2/imgproc.hpp>
+//#include <filesystem>
+//#include <iostream>
+#include "cropImage.h"
 
 int main() {
-
+/*
     //creating output directory
-    //std::string outputFolder = "/Users/allen/Downloads/Code/Image-Processing-Driving-Data/resizedLeftImg8bit_trainvaltest/train/aachen"; 
-    std::string outputFolder = "/Users/allen/Downloads/Code/Image-Processing-Driving-Data/BottomHalfImg8bitVideo/stuttgart_00"; 
-    if(!std::__fs::filesystem::exists(outputFolder))
+    std::string outputFolder1 = "/Users/allen/Downloads/Code/Image-Processing-Driving-Data/BottomHalfImg8bitVideo/stuttgart_00"; 
+    std::string outputFolder2 = "/Users/allen/Downloads/Code/Image-Processing-Driving-Data/BottomHalfImg8bitVideo/stuttgart_01"; 
+    std::string outputFolder3 = "/Users/allen/Downloads/Code/Image-Processing-Driving-Data/BottomHalfImg8bitVideo/stuttgart_02"; 
+    if(!std::__fs::filesystem::exists(outputFolder1))
     {
-        if(!std::__fs::filesystem::create_directories(outputFolder))
+        if(!std::__fs::filesystem::create_directories(outputFolder1))
         {
             std::cout << "Error creating directory" << "\n";
             return 1;
         }
         else
         {
-            std::cout << "Successfully created folder: " << outputFolder << "\n";
+            std::cout << "Successfully created folder: " << outputFolder1 << "\n";
         }
     }
 
     //load the training data
-    //std::string left_training_image_aachen = "/Users/allen/Downloads/Code/Image-Processing-Driving-Data/leftImg8bit_trainvaltest/leftImg8bit/train/aachen";
-    std::string left_training_image_aachen = "/Users/allen/Downloads/Code/Image-Processing-Driving-Data/leftImg8bit_demoVideo/leftImg8bit/demoVideo/stuttgart_00";
+    std::string stuttgart00Data = "/Users/allen/Downloads/Code/Image-Processing-Driving-Data/leftImg8bit_demoVideo/leftImg8bit/demoVideo/stuttgart_00";
+    std::string stuttgart01Data = "/Users/allen/Downloads/Code/Image-Processing-Driving-Data/leftImg8bit_demoVideo/leftImg8bit/demoVideo/stuttgart_01";
+    std::string stuttgart02Data = "/Users/allen/Downloads/Code/Image-Processing-Driving-Data/leftImg8bit_demoVideo/leftImg8bit/demoVideo/stuttgart_02";
 
-    for (const auto& entry : std::__fs::filesystem::directory_iterator(left_training_image_aachen))
+    for (const auto& entry : std::__fs::filesystem::directory_iterator(stuttgart00Data))
     {
         // Check if the current entry is a file
         if (std::__fs::filesystem::is_regular_file(entry.path())) 
@@ -53,14 +56,29 @@ int main() {
             cv::Mat croppedImage = image(bottomHalfRect);
 
             // Save the resized image
-            std::string outputPath = outputFolder + "/" + entry.path().filename().string();
+            std::string outputPath = outputFolder1 + "/" + entry.path().filename().string();
             cv::imwrite(outputPath, croppedImage);
             std::cout << "Resized image saved to: " << outputPath << std::endl;
             std::cout << "width: " << image.cols << "height: " << image.rows << "\n";
-
             
         }
 
     }
+    */
+
+   //load the training data
+    std::string stuttgart00Data = "/Users/allen/Downloads/Code/Image-Processing-Driving-Data/leftImg8bit_demoVideo/leftImg8bit/demoVideo/stuttgart_00";
+    std::string stuttgart01Data = "/Users/allen/Downloads/Code/Image-Processing-Driving-Data/leftImg8bit_demoVideo/leftImg8bit/demoVideo/stuttgart_01";
+    std::string stuttgart02Data = "/Users/allen/Downloads/Code/Image-Processing-Driving-Data/leftImg8bit_demoVideo/leftImg8bit/demoVideo/stuttgart_02";
+
+   //creating output directory
+    std::string outputFolder1 = "/Users/allen/Downloads/Code/Image-Processing-Driving-Data/BottomHalfImg8bitVideo/stuttgart_00"; 
+    std::string outputFolder2 = "/Users/allen/Downloads/Code/Image-Processing-Driving-Data/BottomHalfImg8bitVideo/stuttgart_01"; 
+    std::string outputFolder3 = "/Users/allen/Downloads/Code/Image-Processing-Driving-Data/BottomHalfImg8bitVideo/stuttgart_02"; 
+
+    Crop crop1(stuttgart00Data, outputFolder1, "bottomHalf");
+    Crop crop2(stuttgart01Data, outputFolder2, "bottomHalf");
+    Crop crop3(stuttgart02Data, outputFolder2, "bottomHalf");
+
     return 0;
 }
