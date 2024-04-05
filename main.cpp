@@ -12,6 +12,7 @@ int main() {
     std::string outputFolder2 = "/Users/allen/Downloads/Code/Image-Processing-Driving-Data/BottomHalfImg8bitVideo/stuttgart_01"; 
     std::string outputFolder3 = "/Users/allen/Downloads/Code/Image-Processing-Driving-Data/BottomHalfImg8bitVideo/stuttgart_02"; 
 
+    //cropping the images to keep only the bottom half
     Crop crop1(stuttgart00Data, outputFolder1, "bottomHalf");
     Crop crop2(stuttgart01Data, outputFolder2, "bottomHalf");
     Crop crop3(stuttgart02Data, outputFolder3, "bottomHalf");

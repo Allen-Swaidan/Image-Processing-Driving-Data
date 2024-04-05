@@ -13,7 +13,7 @@ Crop::Crop(std::string inputData, std::string outputData, std::string croppingSt
         std::cout << "Error: Cropping function does not exist" << "\n";
     }
 }
-
+//creates an output folder for the edited images to be written to
 bool Crop::createOutputDirectory(std::string outputData)
 {
     if(!std::__fs::filesystem::exists(outputData))
@@ -30,7 +30,7 @@ bool Crop::createOutputDirectory(std::string outputData)
         }
     }
 }
-
+//defining the region of interest based on the type of processing used
 void Crop::defineROI(int &imageWidth, int &imageHeight)
 {
     imageWidth = image.cols;
@@ -42,6 +42,7 @@ void Crop::defineROI(int &imageWidth, int &imageHeight)
     ROIheight = imageHeight / 2 ;     //height of the ROI
 }
 
+//crops the image to keep the bottom half only as the ROI
 void Crop::bottomHalf(std::string inputData, std::string outputData)
 {
     for (const auto& entry : std::__fs::filesystem::directory_iterator(inputData))
