@@ -49,7 +49,7 @@ void Crop::bottomHalf(std::string inputData, std::string outputData)
         if (std::__fs::filesystem::is_regular_file(entry.path())) 
         {
             // Load the image from file
-            cv::Mat image = cv::imread(entry.path().string());
+            image = cv::imread(entry.path().string());
             if (image.empty()) 
             {
                 std::cerr << "Error loading image: " << entry.path() << std::endl;
@@ -58,11 +58,12 @@ void Crop::bottomHalf(std::string inputData, std::string outputData)
 
             defineROI(imageWidth, imageHeight);
 
-            cv::Rect bottomHalfRect(x, y, imageWidth, imageHeight);
+            cv::Rect bottomHalfRect(x, y, imageWidth, ROIheight);
             cv::Mat croppedImage = image(bottomHalfRect);
 
             // Save the resized image
             std::string outputPath = outputData + "/" + entry.path().filename().string();
+
             cv::imwrite(outputPath, croppedImage);
             std::cout << "Resized image saved to: " << outputPath << std::endl;
             std::cout << "width: " << image.cols << "height: " << image.rows << "\n";
