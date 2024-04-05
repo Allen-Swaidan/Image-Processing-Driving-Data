@@ -10,6 +10,7 @@ class Crop
         bool createOutputDirectory(std::string outputData);
         void defineROI(int &imageWidth, int &imageHeight);
         void bottomHalf(std::string inputData, std::string outputData);
+        int d=5;
 
     private:
         cv::Mat image;
