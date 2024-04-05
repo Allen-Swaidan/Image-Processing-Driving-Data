@@ -13,6 +13,7 @@ Crop::Crop(std::string inputData, std::string outputData, std::string croppingSt
         std::cout << "Error: Cropping function does not exist" << "\n";
     }
 }
+
 //creates an output folder for the edited images to be written to
 bool Crop::createOutputDirectory(std::string outputData)
 {
@@ -30,6 +31,7 @@ bool Crop::createOutputDirectory(std::string outputData)
         }
     }
 }
+
 //defining the region of interest based on the type of processing used
 void Crop::defineROI(int &imageWidth, int &imageHeight)
 {
@@ -66,8 +68,8 @@ void Crop::bottomHalf(std::string inputData, std::string outputData)
             std::string outputPath = outputData + "/" + entry.path().filename().string();
 
             cv::imwrite(outputPath, croppedImage);
-            std::cout << "Resized image saved to: " << outputPath << std::endl;
-            std::cout << "width: " << image.cols << "height: " << image.rows << "\n";
+            std::cout << "Resized image saved to: " << outputPath << "\n";
+            std::cout << "width: " << image.cols << " height: " << image.rows << "\n";
 
         }
     }
