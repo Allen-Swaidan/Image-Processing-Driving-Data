@@ -6,7 +6,7 @@ enable_testing()
 
 find_package(OpenCV REQUIRED)
 include_directories(${OpenCV_INCLUDE_DIRS})
-add_executable(imgProc main.cpp cropImage.cpp normalize.cpp)
+add_executable(imgProc main.cpp cropImage.cpp normalize.cpp grayScale.cpp)
 
 target_link_libraries(imgProc ${OpenCV_LIBS})
 

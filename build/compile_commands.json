@@ -4,5 +4,23 @@
   "command": "/usr/bin/clang++  -isystem /usr/local/Cellar/opencv/4.9.0_5/include/opencv4 -g -std=gnu++11 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.7 -o CMakeFiles/imgProc.dir/main.cpp.o -c /Users/allen/Downloads/Code/Image-Processing-Driving-Data/main.cpp",
   "file": "/Users/allen/Downloads/Code/Image-Processing-Driving-Data/main.cpp",
   "output": "CMakeFiles/imgProc.dir/main.cpp.o"
+},
+{
+  "directory": "/Users/allen/Downloads/Code/Image-Processing-Driving-Data/build",
+  "command": "/usr/bin/clang++  -isystem /usr/local/Cellar/opencv/4.9.0_5/include/opencv4 -g -std=gnu++11 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.7 -o CMakeFiles/imgProc.dir/cropImage.cpp.o -c /Users/allen/Downloads/Code/Image-Processing-Driving-Data/cropImage.cpp",
+  "file": "/Users/allen/Downloads/Code/Image-Processing-Driving-Data/cropImage.cpp",
+  "output": "CMakeFiles/imgProc.dir/cropImage.cpp.o"
+},
+{
+  "directory": "/Users/allen/Downloads/Code/Image-Processing-Driving-Data/build",
+  "command": "/usr/bin/clang++  -isystem /usr/local/Cellar/opencv/4.9.0_5/include/opencv4 -g -std=gnu++11 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.7 -o CMakeFiles/imgProc.dir/normalize.cpp.o -c /Users/allen/Downloads/Code/Image-Processing-Driving-Data/normalize.cpp",
+  "file": "/Users/allen/Downloads/Code/Image-Processing-Driving-Data/normalize.cpp",
+  "output": "CMakeFiles/imgProc.dir/normalize.cpp.o"
+},
+{
+  "directory": "/Users/allen/Downloads/Code/Image-Processing-Driving-Data/build",
+  "command": "/usr/bin/clang++  -isystem /usr/local/Cellar/opencv/4.9.0_5/include/opencv4 -g -std=gnu++11 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.7 -o CMakeFiles/imgProc.dir/grayScale.cpp.o -c /Users/allen/Downloads/Code/Image-Processing-Driving-Data/grayScale.cpp",
+  "file": "/Users/allen/Downloads/Code/Image-Processing-Driving-Data/grayScale.cpp",
+  "output": "CMakeFiles/imgProc.dir/grayScale.cpp.o"
 }
 ]

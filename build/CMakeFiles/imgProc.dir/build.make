@@ -83,14 +83,62 @@ CMakeFiles/imgProc.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/imgProc.dir/main.cpp.s"
 	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/allen/Downloads/Code/Image-Processing-Driving-Data/main.cpp -o CMakeFiles/imgProc.dir/main.cpp.s
 
+CMakeFiles/imgProc.dir/cropImage.cpp.o: CMakeFiles/imgProc.dir/flags.make
+CMakeFiles/imgProc.dir/cropImage.cpp.o: /Users/allen/Downloads/Code/Image-Processing-Driving-Data/cropImage.cpp
+CMakeFiles/imgProc.dir/cropImage.cpp.o: CMakeFiles/imgProc.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/allen/Downloads/Code/Image-Processing-Driving-Data/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/imgProc.dir/cropImage.cpp.o"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/imgProc.dir/cropImage.cpp.o -MF CMakeFiles/imgProc.dir/cropImage.cpp.o.d -o CMakeFiles/imgProc.dir/cropImage.cpp.o -c /Users/allen/Downloads/Code/Image-Processing-Driving-Data/cropImage.cpp
+
+CMakeFiles/imgProc.dir/cropImage.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/imgProc.dir/cropImage.cpp.i"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/allen/Downloads/Code/Image-Processing-Driving-Data/cropImage.cpp > CMakeFiles/imgProc.dir/cropImage.cpp.i
+
+CMakeFiles/imgProc.dir/cropImage.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/imgProc.dir/cropImage.cpp.s"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/allen/Downloads/Code/Image-Processing-Driving-Data/cropImage.cpp -o CMakeFiles/imgProc.dir/cropImage.cpp.s
+
+CMakeFiles/imgProc.dir/normalize.cpp.o: CMakeFiles/imgProc.dir/flags.make
+CMakeFiles/imgProc.dir/normalize.cpp.o: /Users/allen/Downloads/Code/Image-Processing-Driving-Data/normalize.cpp
+CMakeFiles/imgProc.dir/normalize.cpp.o: CMakeFiles/imgProc.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/allen/Downloads/Code/Image-Processing-Driving-Data/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/imgProc.dir/normalize.cpp.o"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/imgProc.dir/normalize.cpp.o -MF CMakeFiles/imgProc.dir/normalize.cpp.o.d -o CMakeFiles/imgProc.dir/normalize.cpp.o -c /Users/allen/Downloads/Code/Image-Processing-Driving-Data/normalize.cpp
+
+CMakeFiles/imgProc.dir/normalize.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/imgProc.dir/normalize.cpp.i"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/allen/Downloads/Code/Image-Processing-Driving-Data/normalize.cpp > CMakeFiles/imgProc.dir/normalize.cpp.i
+
+CMakeFiles/imgProc.dir/normalize.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/imgProc.dir/normalize.cpp.s"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/allen/Downloads/Code/Image-Processing-Driving-Data/normalize.cpp -o CMakeFiles/imgProc.dir/normalize.cpp.s
+
+CMakeFiles/imgProc.dir/grayScale.cpp.o: CMakeFiles/imgProc.dir/flags.make
+CMakeFiles/imgProc.dir/grayScale.cpp.o: /Users/allen/Downloads/Code/Image-Processing-Driving-Data/grayScale.cpp
+CMakeFiles/imgProc.dir/grayScale.cpp.o: CMakeFiles/imgProc.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/allen/Downloads/Code/Image-Processing-Driving-Data/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/imgProc.dir/grayScale.cpp.o"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/imgProc.dir/grayScale.cpp.o -MF CMakeFiles/imgProc.dir/grayScale.cpp.o.d -o CMakeFiles/imgProc.dir/grayScale.cpp.o -c /Users/allen/Downloads/Code/Image-Processing-Driving-Data/grayScale.cpp
+
+CMakeFiles/imgProc.dir/grayScale.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/imgProc.dir/grayScale.cpp.i"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/allen/Downloads/Code/Image-Processing-Driving-Data/grayScale.cpp > CMakeFiles/imgProc.dir/grayScale.cpp.i
+
+CMakeFiles/imgProc.dir/grayScale.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/imgProc.dir/grayScale.cpp.s"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/allen/Downloads/Code/Image-Processing-Driving-Data/grayScale.cpp -o CMakeFiles/imgProc.dir/grayScale.cpp.s
+
 # Object files for target imgProc
 imgProc_OBJECTS = \
-"CMakeFiles/imgProc.dir/main.cpp.o"
+"CMakeFiles/imgProc.dir/main.cpp.o" \
+"CMakeFiles/imgProc.dir/cropImage.cpp.o" \
+"CMakeFiles/imgProc.dir/normalize.cpp.o" \
+"CMakeFiles/imgProc.dir/grayScale.cpp.o"
 
 # External object files for target imgProc
 imgProc_EXTERNAL_OBJECTS =
 
 imgProc: CMakeFiles/imgProc.dir/main.cpp.o
+imgProc: CMakeFiles/imgProc.dir/cropImage.cpp.o
+imgProc: CMakeFiles/imgProc.dir/normalize.cpp.o
+imgProc: CMakeFiles/imgProc.dir/grayScale.cpp.o
 imgProc: CMakeFiles/imgProc.dir/build.make
 imgProc: /usr/local/lib/libopencv_gapi.4.9.0.dylib
 imgProc: /usr/local/lib/libopencv_stitching.4.9.0.dylib
@@ -148,7 +196,7 @@ imgProc: /usr/local/lib/libopencv_photo.4.9.0.dylib
 imgProc: /usr/local/lib/libopencv_imgproc.4.9.0.dylib
 imgProc: /usr/local/lib/libopencv_core.4.9.0.dylib
 imgProc: CMakeFiles/imgProc.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/allen/Downloads/Code/Image-Processing-Driving-Data/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable imgProc"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/allen/Downloads/Code/Image-Processing-Driving-Data/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable imgProc"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/imgProc.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
