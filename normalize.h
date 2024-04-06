@@ -6,7 +6,6 @@
 class Normalize
 {
     public:
-        //Normalize(std::string inputData, std::string outputData);
         Normalize();
         bool createOutputDirectory(std::string outputData);
         void Normalization(std::string inputData, std::string outputData);

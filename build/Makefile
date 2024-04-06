@@ -523,6 +523,54 @@ imgProc/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/imgProc.dir/build.make CMakeFiles/imgProc.dir/build
 .PHONY : imgProc/fast
 
+cropImage.o: cropImage.cpp.o
+.PHONY : cropImage.o
+
+# target to build an object file
+cropImage.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/imgProc.dir/build.make CMakeFiles/imgProc.dir/cropImage.cpp.o
+.PHONY : cropImage.cpp.o
+
+cropImage.i: cropImage.cpp.i
+.PHONY : cropImage.i
+
+# target to preprocess a source file
+cropImage.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/imgProc.dir/build.make CMakeFiles/imgProc.dir/cropImage.cpp.i
+.PHONY : cropImage.cpp.i
+
+cropImage.s: cropImage.cpp.s
+.PHONY : cropImage.s
+
+# target to generate assembly for a file
+cropImage.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/imgProc.dir/build.make CMakeFiles/imgProc.dir/cropImage.cpp.s
+.PHONY : cropImage.cpp.s
+
+grayScale.o: grayScale.cpp.o
+.PHONY : grayScale.o
+
+# target to build an object file
+grayScale.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/imgProc.dir/build.make CMakeFiles/imgProc.dir/grayScale.cpp.o
+.PHONY : grayScale.cpp.o
+
+grayScale.i: grayScale.cpp.i
+.PHONY : grayScale.i
+
+# target to preprocess a source file
+grayScale.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/imgProc.dir/build.make CMakeFiles/imgProc.dir/grayScale.cpp.i
+.PHONY : grayScale.cpp.i
+
+grayScale.s: grayScale.cpp.s
+.PHONY : grayScale.s
+
+# target to generate assembly for a file
+grayScale.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/imgProc.dir/build.make CMakeFiles/imgProc.dir/grayScale.cpp.s
+.PHONY : grayScale.cpp.s
+
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -546,6 +594,30 @@ main.s: main.cpp.s
 main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/imgProc.dir/build.make CMakeFiles/imgProc.dir/main.cpp.s
 .PHONY : main.cpp.s
+
+normalize.o: normalize.cpp.o
+.PHONY : normalize.o
+
+# target to build an object file
+normalize.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/imgProc.dir/build.make CMakeFiles/imgProc.dir/normalize.cpp.o
+.PHONY : normalize.cpp.o
+
+normalize.i: normalize.cpp.i
+.PHONY : normalize.i
+
+# target to preprocess a source file
+normalize.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/imgProc.dir/build.make CMakeFiles/imgProc.dir/normalize.cpp.i
+.PHONY : normalize.cpp.i
+
+normalize.s: normalize.cpp.s
+.PHONY : normalize.s
+
+# target to generate assembly for a file
+normalize.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/imgProc.dir/build.make CMakeFiles/imgProc.dir/normalize.cpp.s
+.PHONY : normalize.cpp.s
 
 # Help Target
 help:
@@ -587,9 +659,18 @@ help:
 	@echo "... NightlyTest"
 	@echo "... NightlyUpdate"
 	@echo "... imgProc"
+	@echo "... cropImage.o"
+	@echo "... cropImage.i"
+	@echo "... cropImage.s"
+	@echo "... grayScale.o"
+	@echo "... grayScale.i"
+	@echo "... grayScale.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... normalize.o"
+	@echo "... normalize.i"
+	@echo "... normalize.s"
 .PHONY : help
 
 

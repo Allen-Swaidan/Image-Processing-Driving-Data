@@ -1,5 +1,5 @@
-CMakeFiles/imgProc.dir/main.cpp.o: \
-  /Users/allen/Downloads/Code/Image-Processing-Driving-Data/main.cpp \
+CMakeFiles/imgProc.dir/cropImage.cpp.o: \
+  /Users/allen/Downloads/Code/Image-Processing-Driving-Data/cropImage.cpp \
   /Users/allen/Downloads/Code/Image-Processing-Driving-Data/cropImage.h \
   /usr/local/Cellar/opencv/4.9.0_5/include/opencv4/opencv2/opencv.hpp \
   /usr/local/Cellar/opencv/4.9.0_5/include/opencv4/opencv2/opencv_modules.hpp \
@@ -550,6 +550,4 @@ CMakeFiles/imgProc.dir/main.cpp.o: \
   /usr/local/Cellar/opencv/4.9.0_5/include/opencv4/opencv2/video/tracking.hpp \
   /usr/local/Cellar/opencv/4.9.0_5/include/opencv4/opencv2/video/background_segm.hpp \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/filesystem \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/stack \
-  /Users/allen/Downloads/Code/Image-Processing-Driving-Data/normalize.h \
-  /Users/allen/Downloads/Code/Image-Processing-Driving-Data/grayScale.h
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/stack
