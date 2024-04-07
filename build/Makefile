@@ -571,6 +571,30 @@ grayScale.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/imgProc.dir/build.make CMakeFiles/imgProc.dir/grayScale.cpp.s
 .PHONY : grayScale.cpp.s
 
+histEqualization.o: histEqualization.cpp.o
+.PHONY : histEqualization.o
+
+# target to build an object file
+histEqualization.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/imgProc.dir/build.make CMakeFiles/imgProc.dir/histEqualization.cpp.o
+.PHONY : histEqualization.cpp.o
+
+histEqualization.i: histEqualization.cpp.i
+.PHONY : histEqualization.i
+
+# target to preprocess a source file
+histEqualization.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/imgProc.dir/build.make CMakeFiles/imgProc.dir/histEqualization.cpp.i
+.PHONY : histEqualization.cpp.i
+
+histEqualization.s: histEqualization.cpp.s
+.PHONY : histEqualization.s
+
+# target to generate assembly for a file
+histEqualization.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/imgProc.dir/build.make CMakeFiles/imgProc.dir/histEqualization.cpp.s
+.PHONY : histEqualization.cpp.s
+
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -665,6 +689,9 @@ help:
 	@echo "... grayScale.o"
 	@echo "... grayScale.i"
 	@echo "... grayScale.s"
+	@echo "... histEqualization.o"
+	@echo "... histEqualization.i"
+	@echo "... histEqualization.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
