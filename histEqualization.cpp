@@ -50,7 +50,6 @@ void histEqual::applyhist(std::string inputData, std::string outputData)
             }
 
             // Apply histogram equalization
-            cv::Mat equalizedImage;
             cv::equalizeHist(grayScaleImage, equalizedImage);
             std::string outputPath = outputData + "/" + entry.path().filename().string();
 

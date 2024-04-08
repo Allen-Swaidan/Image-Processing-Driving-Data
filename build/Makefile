@@ -619,6 +619,30 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/imgProc.dir/build.make CMakeFiles/imgProc.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+medianBlur.o: medianBlur.cpp.o
+.PHONY : medianBlur.o
+
+# target to build an object file
+medianBlur.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/imgProc.dir/build.make CMakeFiles/imgProc.dir/medianBlur.cpp.o
+.PHONY : medianBlur.cpp.o
+
+medianBlur.i: medianBlur.cpp.i
+.PHONY : medianBlur.i
+
+# target to preprocess a source file
+medianBlur.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/imgProc.dir/build.make CMakeFiles/imgProc.dir/medianBlur.cpp.i
+.PHONY : medianBlur.cpp.i
+
+medianBlur.s: medianBlur.cpp.s
+.PHONY : medianBlur.s
+
+# target to generate assembly for a file
+medianBlur.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/imgProc.dir/build.make CMakeFiles/imgProc.dir/medianBlur.cpp.s
+.PHONY : medianBlur.cpp.s
+
 normalize.o: normalize.cpp.o
 .PHONY : normalize.o
 
@@ -695,6 +719,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... medianBlur.o"
+	@echo "... medianBlur.i"
+	@echo "... medianBlur.s"
 	@echo "... normalize.o"
 	@echo "... normalize.i"
 	@echo "... normalize.s"
