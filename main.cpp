@@ -2,6 +2,7 @@
 #include "normalize.h"
 #include "grayScale.h"
 #include "histEqualization.h"
+#include "medianBlur.h"
 
 int main() {
 
@@ -23,7 +24,8 @@ int main() {
     std::string equalizedCroppedStuttgart00Data = "/Users/allen/Downloads/Code/Image-Processing-Driving-Data/equalizedImages/stuttgart_00";
     std::string equalizedCroppedStuttgart01Data = "/Users/allen/Downloads/Code/Image-Processing-Driving-Data/equalizedImages/stuttgart_01";
     std::string equalizedCroppedStuttgart02Data = "/Users/allen/Downloads/Code/Image-Processing-Driving-Data/equalizedImages/stuttgart_02";
-
+    
+    /*
     //cropping the images to keep only the bottom half
     Crop crop1(stuttgart00Data, croppedStuttgart00Data, "bottomHalf");
     Crop crop2(stuttgart01Data, croppedStuttgart01Data, "bottomHalf");
@@ -44,6 +46,13 @@ int main() {
     histEqual applyEqualization1(grayScaledCroppedStuttgart00Data, equalizedCroppedStuttgart00Data);
     histEqual applyEqualization2(grayScaledCroppedStuttgart01Data, equalizedCroppedStuttgart01Data);
     histEqual applyEqualization3(grayScaledCroppedStuttgart02Data, equalizedCroppedStuttgart02Data);
+    */
+
+    //applying median filtering
+    medianBlur filter1(equalizedCroppedStuttgart00Data, "/Users/allen/Downloads/Code/Image-Processing-Driving-Data/medianFilteredImg/stuttgart_00", 21);
+    medianBlur filter2(equalizedCroppedStuttgart01Data, "/Users/allen/Downloads/Code/Image-Processing-Driving-Data/medianFilteredImg/stuttgart_01", 21);
+    medianBlur filter3(equalizedCroppedStuttgart02Data, "/Users/allen/Downloads/Code/Image-Processing-Driving-Data/medianFilteredImg/stuttgart_02", 21);
 
     return 0;
+
 }

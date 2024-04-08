@@ -32,20 +32,19 @@ void grayScale::applyGrayScale(std::string inputData, std::string outputData)
         {
 
             image = cv::imread(entry.path().string());
-    
+
             // Check if the image is loaded successfully
             if (image.empty()) 
             {
                 std::cerr << "Error: Could not read the image." << std::endl;
                 continue;
             }
-    
+
             // Convert the image to grayscale
-            cv::Mat grayscaleImage;
-            cv::cvtColor(image, grayscaleImage, cv::COLOR_BGR2GRAY);
-    
+            cv::cvtColor(image, grayScaledImage, cv::COLOR_BGR2GRAY);
+
             std::string outputPath = outputData + "/" + entry.path().filename().string();
-            cv::imwrite(outputPath, grayscaleImage);
+            cv::imwrite(outputPath, grayScaledImage);
             std::cout << "Gray scaled image saved to: " << outputPath << "\n";
         }
     }
